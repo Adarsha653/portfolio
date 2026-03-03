@@ -52,7 +52,7 @@
     <!-- ============ NAVBAR ============ -->
     <header class="navbar" id="navbar">
         <div class="container">
-            <a href="#hero" class="nav-logo">Adarsha Aryal</a>
+            <a href="#hero" class="nav-logo"><span class="nav-logo-accent">A</span>A</a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -73,15 +73,23 @@
     <main>
         <!-- ============ HERO ============ -->
         <section class="hero" id="hero">
+            <div class="hero-bg"></div>
             <div class="container hero-content">
                 <div class="hero-text">
-                    <p class="hero-greeting fade-in">Hello, I'm</p>
+                    <div class="hero-badge fade-in">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                        Melbourne, Australia
+                    </div>
                     <h1 class="hero-name fade-in">Adarsha Aryal</h1>
-                    <h2 class="hero-title fade-in">Data Science Professional</h2>
+                    <div class="hero-typed fade-in">
+                        <span class="hero-typed-text">I build </span>
+                        <span class="hero-typed-rotate" id="typed-text"></span>
+                        <span class="hero-typed-cursor">|</span>
+                    </div>
                     <p class="hero-summary fade-in">
-                        Master of Data Science graduate from Monash University with a background
-                        in engineering and business. I build real-time data pipelines, scalable
-                        data systems, and analytics solutions using Python, PySpark, Kafka, and AWS.
+                        Master of Data Science from Monash University with 6+ years in engineering.
+                        I work with Python, PySpark, Kafka, and AWS to turn raw data into
+                        reliable systems and meaningful insights.
                     </p>
                     <div class="hero-cta fade-in">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -97,6 +105,12 @@
                         <a href="mailto:adarsha.aryal653@gmail.com" aria-label="Email">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         </a>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="hero-image-wrapper">
+                        <img src="https://avatars.githubusercontent.com/u/173156785?v=4" alt="Adarsha Aryal" width="300" height="300" loading="eager">
+                        <div class="hero-image-ring"></div>
                     </div>
                 </div>
             </div>
@@ -230,7 +244,7 @@
                         <div class="project-card-header">
                             <svg class="project-folder" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                             <div class="project-links">
-                                <a href="https://github.com/Adarsha653" target="_blank" rel="noopener noreferrer" aria-label="View Hive Joy on GitHub">
+                                <a href="https://github.com/xplorer-io/hivejoy" target="_blank" rel="noopener noreferrer" aria-label="View Hive Joy on GitHub">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                                 </a>
                             </div>
@@ -267,7 +281,7 @@
                         <div class="project-card-header">
                             <svg class="project-folder" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                             <div class="project-links">
-                                <a href="https://github.com/Adarsha653" target="_blank" rel="noopener noreferrer" aria-label="View Data Visualisation Project on GitHub">
+                                <a href="https://github.com/Adarsha653/US_Mass_Shootings_Dashboard" target="_blank" rel="noopener noreferrer" aria-label="View Data Visualisation Project on GitHub">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                                 </a>
                             </div>
@@ -285,7 +299,7 @@
                         <div class="project-card-header">
                             <svg class="project-folder" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
                             <div class="project-links">
-                                <a href="https://github.com/Adarsha653" target="_blank" rel="noopener noreferrer" aria-label="View Industry Project on GitHub">
+                                <a href="https://github.com/Adarsha653/CoolRoute" target="_blank" rel="noopener noreferrer" aria-label="View Industry Project on GitHub">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                                 </a>
                             </div>
@@ -316,6 +330,7 @@
                     <a href="mailto:adarsha.aryal653@gmail.com" class="btn btn-primary btn-large">Say Hello</a>
                     <div class="contact-details">
                         <p>Melbourne, Australia</p>
+                        <p>+61 449 020 354</p>
                         <p>Full-time work rights until March 2028 (Graduate Visa 485)</p>
                     </div>
                 </div>

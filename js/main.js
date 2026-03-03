@@ -78,4 +78,52 @@ document.addEventListener('DOMContentLoaded', () => {
             animationObserver.observe(el);
         });
     }
+
+    // ---- Typewriter Effect ----
+    const typedEl = document.getElementById('typed-text');
+    if (typedEl) {
+        const phrases = [
+            'data pipelines.',
+            'analytics solutions.',
+            'scalable data systems.',
+            'machine learning models.'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeSpeed = 80;
+        const deleteSpeed = 40;
+        const pauseAfterType = 2000;
+        const pauseAfterDelete = 400;
+
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (!isDeleting) {
+                typedEl.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === currentPhrase.length) {
+                    isDeleting = true;
+                    setTimeout(type, pauseAfterType);
+                    return;
+                }
+                setTimeout(type, typeSpeed);
+            } else {
+                typedEl.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    phraseIndex = (phraseIndex + 1) % phrases.length;
+                    setTimeout(type, pauseAfterDelete);
+                    return;
+                }
+                setTimeout(type, deleteSpeed);
+            }
+        }
+
+        // Start typing after hero animations finish
+        setTimeout(type, 1200);
+    }
 });
